@@ -9,9 +9,35 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ZStack {
+            Color(red: 0.09,green: 0.63, blue: 0.52)
+                .edgesIgnoringSafeArea(.all)
+            VStack {
+                Image("liza")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 150, height: 150)
+                    .clipShape(Circle())
+                    .overlay(
+                        Circle().stroke(Color.white, lineWidth: 5))
+                Text("Liza Moskalkova")
+                    .font(Font.custom("Pacifico-Regular", size: 30))
+                    .bold()
+                    .foregroundColor(.white)
+                Text("IOS Developer")
+                    .foregroundColor(.white)
+                    .font(.system(size: 25))
+                Divider()
+                HStack {
+                    Image(systemName: "phone.fill")
+                    RoundedRectangle(cornerRadius: 25)
+                        .fill(Color.white)
+                        .frame(height: 50)
+                        .overlay(Text("+44 123 456 789"))
+            }
+        }
     }
+}
 }
 
 struct ContentView_Previews: PreviewProvider {

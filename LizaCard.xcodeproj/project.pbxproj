@@ -14,6 +14,7 @@
 		54031AB027B58B6F0031208E /* LizaCardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54031AAF27B58B6F0031208E /* LizaCardTests.swift */; };
 		54031ABA27B58B6F0031208E /* LizaCardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54031AB927B58B6F0031208E /* LizaCardUITests.swift */; };
 		54031ABC27B58B6F0031208E /* LizaCardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54031ABB27B58B6F0031208E /* LizaCardUITestsLaunchTests.swift */; };
+		54031ACA27B69BDB0031208E /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 54031AC927B69BDB0031208E /* Pacifico-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 		54031AB527B58B6F0031208E /* LizaCardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LizaCardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54031AB927B58B6F0031208E /* LizaCardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LizaCardUITests.swift; sourceTree = "<group>"; };
 		54031ABB27B58B6F0031208E /* LizaCardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LizaCardUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		54031AC927B69BDB0031208E /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
+		54031ACB27B69EB70031208E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,8 @@
 		54031A9D27B58B6C0031208E /* LizaCard */ = {
 			isa = PBXGroup;
 			children = (
+				54031ACB27B69EB70031208E /* Info.plist */,
+				54031AC827B69B9F0031208E /* Fonts */,
 				54031A9E27B58B6C0031208E /* LizaCardApp.swift */,
 				54031AA027B58B6C0031208E /* ContentView.swift */,
 				54031AA227B58B6F0031208E /* Assets.xcassets */,
@@ -125,6 +130,14 @@
 				54031ABB27B58B6F0031208E /* LizaCardUITestsLaunchTests.swift */,
 			);
 			path = LizaCardUITests;
+			sourceTree = "<group>";
+		};
+		54031AC827B69B9F0031208E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				54031AC927B69BDB0031208E /* Pacifico-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54031ACA27B69BDB0031208E /* Pacifico-Regular.ttf in Resources */,
 				54031AA627B58B6F0031208E /* Preview Assets.xcassets in Resources */,
 				54031AA327B58B6F0031208E /* Assets.xcassets in Resources */,
 			);
@@ -422,6 +436,7 @@
 				DEVELOPMENT_TEAM = HW2G48N5WT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LizaCard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -451,6 +466,7 @@
 				DEVELOPMENT_TEAM = HW2G48N5WT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LizaCard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
